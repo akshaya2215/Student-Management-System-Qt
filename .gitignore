@@ -1,0 +1,23 @@
+# Qt Creator user files
+*.pro.user
+
+# Qt Creator folder
+.qtcreator/
+
+# Build folders
+build/
+debug/
+release/
+
+# Qt generated files
+Makefile*
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
