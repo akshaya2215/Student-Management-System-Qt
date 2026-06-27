@@ -20,6 +20,7 @@ private:
 private slots:
     void addStudent();
     void searchStudent();
+    void updateStudent();
 
 };
 

@@ -4,6 +4,7 @@
 #include <QDebug>
 #include "addstudent.h"
 #include "searchstudent.h"
+#include "updatestudent.h"
 management::management(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::management)
@@ -18,7 +19,10 @@ management::management(QWidget *parent)
             SIGNAL(clicked()),
             this,
             SLOT(searchStudent()));
-
+    connect(ui->pushButtonUpdate,
+            SIGNAL(clicked()),
+            this,
+            SLOT(updateStudent()));
 }
 
 management::~management()
@@ -42,6 +46,16 @@ void management::searchStudent()
     s->setTable(ui->tableWidget);
 
     s->show();
+
+    this->hide();
+}
+void management::updateStudent()
+{
+    updatestudent *u = new updatestudent(this);
+
+    u->setTable(ui->tableWidget);
+
+    u->show();
 
     this->hide();
 }

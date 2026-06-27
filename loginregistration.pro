@@ -11,19 +11,22 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     management.cpp \
-    searchstudent.cpp
+    searchstudent.cpp \
+    updatestudent.cpp
 
 HEADERS += \
     addstudent.h \
     mainwindow.h \
     management.h \
-    searchstudent.h
+    searchstudent.h \
+    updatestudent.h
 
 FORMS += \
     addstudent.ui \
     mainwindow.ui \
     management.ui \
-    searchstudent.ui
+    searchstudent.ui \
+    updatestudent.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
