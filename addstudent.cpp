@@ -2,12 +2,12 @@
 #include "ui_addstudent.h"
 #include "management.h"
 #include <QMessageBox>
-
-addstudent::addstudent(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::addstudent)
+addstudent::addstudent(management *m, QWidget *parent)
+    : QWidget(parent),
+    ui(new Ui::addstudent)
 {
     ui->setupUi(this);
+    dashboard = m;
 studentTable = nullptr;
     connect(ui->pushButtonSave,
             SIGNAL(clicked()),
@@ -85,3 +85,5 @@ void addstudent::setTable(QTableWidget *table)
 {
     studentTable = table;
 }
+
+

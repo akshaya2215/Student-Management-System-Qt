@@ -26,7 +26,7 @@ management::~management()
 }
 void management::addStudent()
 {
-    addstudent *student = new addstudent();
+    addstudent *student = new addstudent(this);
 
     student->setTable(ui->tableWidget);
 
