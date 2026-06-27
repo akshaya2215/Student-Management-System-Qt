@@ -1,19 +1,26 @@
 #include "searchstudent.h"
 #include "ui_searchstudent.h"
+#include "management.h"
 #include <QMessageBox>
 
-searchstudent::searchstudent(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::searchstudent)
+searchstudent::searchstudent(management *m, QWidget *parent)
+    : QWidget(parent),
+    ui(new Ui::searchstudent)
 {
     ui->setupUi(this);
 
+    dashboard = m;
     studentTable = nullptr;
 
     connect(ui->pushButtonSearch,
             SIGNAL(clicked()),
             this,
             SLOT(searchStudent()));
+
+    connect(ui->pushButtonBack,
+            SIGNAL(clicked()),
+            this,
+            SLOT(back()));
 }
 void searchstudent::setTable(QTableWidget *table)
 {
@@ -39,7 +46,10 @@ void searchstudent::searchStudent()
 
     for(int row = 0; row < studentTable->rowCount(); row++)
     {
-        if(studentTable->item(row,0)->text() == id)
+
+        QTableWidgetItem *item = studentTable->item(row,0);
+
+        if(item && item->text() == id)
         {
             ui->labelName->setText(studentTable->item(row,1)->text());
             ui->labelDept->setText(studentTable->item(row,2)->text());
@@ -57,4 +67,9 @@ void searchstudent::searchStudent()
                              "Not Found",
                              "Student not found.");
     }
+}
+void searchstudent::back()
+{
+    dashboard->show();
+    this->close();
 }

@@ -18,6 +18,7 @@ management::management(QWidget *parent)
             SIGNAL(clicked()),
             this,
             SLOT(searchStudent()));
+
 }
 
 management::~management()
@@ -36,7 +37,7 @@ void management::addStudent()
 }
 void management::searchStudent()
 {
-    searchstudent *s = new searchstudent();
+    searchstudent *s = new searchstudent(this);
 
     s->setTable(ui->tableWidget);
 
