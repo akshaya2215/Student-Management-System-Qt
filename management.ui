@@ -139,8 +139,8 @@ font-size:30px;
   <widget class="QPushButton" name="pushButtonLogout">
    <property name="geometry">
     <rect>
-     <x>1390</x>
-     <y>30</y>
+     <x>1260</x>
+     <y>50</y>
      <width>191</width>
      <height>51</height>
     </rect>
@@ -158,7 +158,7 @@ font-size:30px;
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>1040</x>
+     <x>920</x>
      <y>190</y>
      <width>371</width>
      <height>28</height>
@@ -176,8 +176,8 @@ font-size:30px;
   <widget class="QTableWidget" name="tableWidget">
    <property name="geometry">
     <rect>
-     <x>930</x>
-     <y>250</y>
+     <x>830</x>
+     <y>260</y>
      <width>621</width>
      <height>511</height>
     </rect>

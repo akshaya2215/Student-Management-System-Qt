@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgb(168, 146, 176);
+}</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -21,6 +26,12 @@
      <width>181</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+}</string>
    </property>
    <property name="text">
     <string>UPDATE STUDENT</string>
@@ -35,6 +46,12 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+}</string>
+   </property>
    <property name="text">
     <string>STUDENT ID</string>
    </property>
@@ -42,11 +59,17 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>250</y>
+     <x>70</x>
+     <y>270</y>
      <width>131</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+}</string>
    </property>
    <property name="text">
     <string>NAME</string>
@@ -55,11 +78,17 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>310</y>
+     <x>70</x>
+     <y>330</y>
      <width>131</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+}</string>
    </property>
    <property name="text">
     <string>DEPARTMENT</string>
@@ -68,11 +97,17 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>70</x>
      <y>380</y>
      <width>131</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+}</string>
    </property>
    <property name="text">
     <string>YEAR</string>
@@ -81,11 +116,17 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>70</x>
      <y>430</y>
      <width>131</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+}</string>
    </property>
    <property name="text">
     <string>PHONE</string>
@@ -105,7 +146,7 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>250</y>
+     <y>270</y>
      <width>251</width>
      <height>31</height>
     </rect>
@@ -115,7 +156,7 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>310</y>
+     <y>330</y>
      <width>251</width>
      <height>31</height>
     </rect>
@@ -150,6 +191,13 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+
+}</string>
+   </property>
    <property name="text">
     <string>search</string>
    </property>
@@ -157,11 +205,18 @@
   <widget class="QPushButton" name="pushButtonUpdate">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>140</x>
      <y>530</y>
      <width>90</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+
+}</string>
    </property>
    <property name="text">
     <string>UPDATE</string>
@@ -170,14 +225,52 @@
   <widget class="QPushButton" name="pushButtonBack">
    <property name="geometry">
     <rect>
-     <x>450</x>
+     <x>400</x>
      <y>530</y>
      <width>90</width>
      <height>29</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 700 9pt &quot;Segoe UI&quot;;
+	color: rgb(0, 0, 0);
+
+}</string>
+   </property>
    <property name="text">
     <string>BACK</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>230</y>
+     <width>581</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Line{
+rgb(0, 0, 0)}
+font: 700 italic 9pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>100</y>
+     <width>118</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
    </property>
   </widget>
  </widget>
