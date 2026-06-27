@@ -64,6 +64,8 @@ void addstudent::saveStudent()
                              "Student Added Successfully!");
 
     clearFields();
+    dashboard->show();
+    this->close();
 }
 void addstudent::clearFields()
 {
@@ -75,9 +77,7 @@ void addstudent::clearFields()
 }
 void addstudent::back()
 {
-    management *m = new management();
-
-    m->show();
+    dashboard->show();
 
     this->close();
 }
