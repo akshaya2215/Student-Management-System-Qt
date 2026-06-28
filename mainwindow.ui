@@ -271,10 +271,11 @@ background:transparent;</string>
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
-    border:none;
-    background:transparent;
-    color:black;
-    font:11pt &quot;Segoe UI&quot;;
+    border: none;
+    background: transparent;
+    color: #1E293B;
+    font: 11pt &quot;Segoe UI&quot;;
+    padding-left: 10px;
 }</string>
       </property>
       <property name="placeholderText">
@@ -317,9 +318,19 @@ background:transparent;</string>
      <property name="styleSheet">
       <string notr="true">QFrame
 {
-    background:white;
-    border:2px solid #D1D5DB;
-    border-radius:10px;
+    background: white;
+    border: 2px solid #D6DCE5;
+    border-radius: 12px;
+}
+
+QFrame:hover
+{
+    border: 2px solid #93C5FD;
+}
+
+QFrame:focus
+{
+    border: 2px solid #2563EB;
 }</string>
      </property>
      <property name="frameShape">
@@ -350,7 +361,7 @@ background:transparent;</string>
      <widget class="QLineEdit" name="lineEdit_5">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>110</x>
         <y>10</y>
         <width>451</width>
         <height>35</height>
@@ -368,17 +379,18 @@ background:transparent;</string>
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
-    border:none;
-    background:transparent;
-    color:#6B7280;r:black;
-    font:11pt &quot;Segoe UI&quot;;
+    border: none;
+    background: transparent;
+    color: #1E293B;
+    font: 11pt &quot;Segoe UI&quot;;
+    padding-left: 10px;
 }</string>
       </property>
       <property name="text">
-       <string>Enter your user password</string>
+       <string/>
       </property>
       <property name="placeholderText">
-       <string>Enter your user name</string>
+       <string>Enter your password</string>
       </property>
      </widget>
     </widget>

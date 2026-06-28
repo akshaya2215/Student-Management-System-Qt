@@ -1,19 +1,42 @@
-/* Main Window */
+/* ===========================
+   Main Window
+   =========================== */
+
 QWidget
 {
     background-color: #F5F7FA;
     font-family: "Segoe UI";
     font-size: 10pt;
+    color: #1E293B;
 }
 
-/* Line Edit */
+/* ===========================
+   Labels
+   =========================== */
+
+QLabel
+{
+    background: transparent;
+    color: #1E293B;
+}
+
+/* ===========================
+   Line Edit
+   =========================== */
+
 QLineEdit
 {
     background-color: white;
-    color: black;
+    color: #1E293B;
     border: 2px solid #CBD5E1;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 6px;
+    selection-background-color: #2563EB;
+}
+
+QLineEdit:hover
+{
+    border: 2px solid #93C5FD;
 }
 
 QLineEdit:focus
@@ -21,11 +44,15 @@ QLineEdit:focus
     border: 2px solid #2563EB;
 }
 
-/* Push Buttons */
+/* ===========================
+   Push Buttons
+   =========================== */
+
 QPushButton
 {
     background-color: #2563EB;
     color: white;
+    border: none;
     border-radius: 8px;
     padding: 8px;
     font-weight: bold;
@@ -39,4 +66,104 @@ QPushButton:hover
 QPushButton:pressed
 {
     background-color: #1E40AF;
+}
+
+/* ===========================
+   Message Box
+   =========================== */
+
+QMessageBox
+{
+    background-color: white;
+}
+
+QMessageBox QLabel
+{
+    color: #1E293B;
+    background: transparent;
+    font: 10pt "Segoe UI";
+}
+
+QMessageBox QPushButton
+{
+    min-width: 80px;
+    min-height: 32px;
+    background-color: #2563EB;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+QMessageBox QPushButton:hover
+{
+    background-color: #1D4ED8;
+}
+
+QMessageBox QPushButton:pressed
+{
+    background-color: #1E40AF;
+}
+
+/* ===========================
+   Table Widget
+   =========================== */
+
+QTableWidget
+{
+    background: white;
+    border: 1px solid #CBD5E1;
+    gridline-color: #E2E8F0;
+    selection-background-color: #2563EB;
+    selection-color: white;
+}
+
+QHeaderView::section
+{
+    background-color: #2563EB;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 6px;
+}
+
+/* ===========================
+   Scroll Bar
+   =========================== */
+
+QScrollBar:vertical
+{
+    border: none;
+    background: #E2E8F0;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical
+{
+    background: #2563EB;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical
+{
+    height: 0px;
+}
+
+QScrollBar:horizontal
+{
+    border: none;
+    background: #E2E8F0;
+    height: 10px;
+}
+
+QScrollBar::handle:horizontal
+{
+    background: #2563EB;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal
+{
+    width: 0px;
 }
