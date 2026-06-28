@@ -8,6 +8,7 @@ CONFIG += c++17
 
 SOURCES += \
     addstudent.cpp \
+    deletestudent.cpp \
     main.cpp \
     mainwindow.cpp \
     management.cpp \
@@ -16,6 +17,7 @@ SOURCES += \
 
 HEADERS += \
     addstudent.h \
+    deletestudent.h \
     mainwindow.h \
     management.h \
     searchstudent.h \
@@ -23,6 +25,7 @@ HEADERS += \
 
 FORMS += \
     addstudent.ui \
+    deletestudent.ui \
     mainwindow.ui \
     management.ui \
     searchstudent.ui \

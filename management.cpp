@@ -5,6 +5,7 @@
 #include "addstudent.h"
 #include "searchstudent.h"
 #include "updatestudent.h"
+#include "deletestudent.h"
 management::management(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::management)
@@ -23,6 +24,10 @@ management::management(QWidget *parent)
             SIGNAL(clicked()),
             this,
             SLOT(updateStudent()));
+    connect(ui->pushButtonDelete,
+            SIGNAL(clicked()),
+            this,
+            SLOT(deleteStudent()));
 }
 
 management::~management()
@@ -56,6 +61,16 @@ void management::updateStudent()
     u->setTable(ui->tableWidget);
 
     u->show();
+
+    this->hide();
+}
+void management::deleteStudent()
+{
+    deletestudent *d = new deletestudent(this);
+
+    d->setTable(ui->tableWidget);
+
+    d->show();
 
     this->hide();
 }
