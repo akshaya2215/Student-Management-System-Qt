@@ -22,6 +22,7 @@ private slots:
     void searchStudent();
     void updateStudent();
     void deleteStudent();
+    void logout();
 
 };
 

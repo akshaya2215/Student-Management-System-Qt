@@ -6,6 +6,8 @@
 #include "searchstudent.h"
 #include "updatestudent.h"
 #include "deletestudent.h"
+#include "mainwindow.h"
+#include <QMessageBox>
 management::management(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::management)
@@ -28,6 +30,11 @@ management::management(QWidget *parent)
             SIGNAL(clicked()),
             this,
             SLOT(deleteStudent()));
+    connect(ui->pushButtonLogout,
+            SIGNAL(clicked()),
+            this,
+            SLOT(logout()));
+
 }
 
 management::~management()
@@ -73,4 +80,22 @@ void management::deleteStudent()
     d->show();
 
     this->hide();
+}
+void management::logout()
+{
+    QMessageBox::StandardButton reply;
+
+    reply = QMessageBox::question(this,
+                                  "Logout",
+                                  "Are you sure you want to logout?",
+                                  QMessageBox::Yes | QMessageBox::No);
+
+    if(reply == QMessageBox::Yes)
+    {
+        MainWindow *login = new MainWindow();
+
+        login->show();
+
+        this->close();
+    }
 }

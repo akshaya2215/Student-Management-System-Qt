@@ -65,7 +65,7 @@ font-size:30px;
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>340</y>
+     <y>370</y>
      <width>441</width>
      <height>71</height>
     </rect>
@@ -83,7 +83,7 @@ font-size:30px;
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>460</y>
+     <y>500</y>
      <width>441</width>
      <height>71</height>
     </rect>
@@ -102,7 +102,7 @@ font-size:30px;
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>580</y>
+     <y>640</y>
      <width>441</width>
      <height>71</height>
     </rect>
@@ -115,25 +115,6 @@ font-size:30px;
    </property>
    <property name="text">
     <string>DELETE STUDENT</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButtonView">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>710</y>
-     <width>441</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	background-color: rgb(223, 94, 255);
-	font: 700 14pt &quot;Perpetua Titling MT&quot;;
-}</string>
-   </property>
-   <property name="text">
-    <string>VIEW ALL STUDENTS</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButtonLogout">
