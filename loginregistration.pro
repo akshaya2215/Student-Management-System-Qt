@@ -40,4 +40,5 @@ RESOURCES += \
     resources.qrc
 
 DISTFILES += \
-    .gitignore
+    .gitignore \
+    style.qss

@@ -4,5 +4,9 @@
         <file>pic2.png</file>
         <file>pic3.png</file>
         <file>pic4.png</file>
+        <file>style.qss</file>
+        <file>graduation.png</file>
+        <file>pass.png</file>
+        <file>usericon.png</file>
     </qresource>
 </RCC>

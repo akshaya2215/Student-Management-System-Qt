@@ -22,8 +22,8 @@ void MainWindow::button()
 {
     QString name[]={"abc","def","ghi"};//registered names
     QString code[]={"abc12","def34","ghi56"};//registered password
-    QString uName=ui->lineEdit->text();
-    QString uCode=ui->lineEdit_2->text();
+    QString uName = ui->lineEdit_2->text();
+    QString uCode = ui->lineEdit_5->text();
     bool found=false;
     for(int i=0;i<name->length();i++){
         if(uName == name[i] && uCode== code[i]){

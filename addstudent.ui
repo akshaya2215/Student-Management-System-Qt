@@ -6,39 +6,56 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>667</width>
-    <height>506</height>
+    <width>670</width>
+    <height>540</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #F5F7FA;</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>20</y>
-     <width>121</width>
-     <height>31</height>
+     <x>220</x>
+     <y>10</y>
+     <width>281</width>
+     <height>51</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #2563EB;
+color: white;
+border-radius: 8px;
+font: bold 18pt &quot;Segoe UI&quot;;
+padding: 8px;</string>
+   </property>
    <property name="text">
-    <string>Add student</string>
+    <string>  ADD STUDENT</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEditID">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>70</y>
+     <x>220</x>
+     <y>110</y>
      <width>281</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QLineEdit{
-font-size:15px;
-	background-color: rgb(170, 85, 127);
+    <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 2px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2563EB;
 }</string>
    </property>
    <property name="text">
@@ -48,11 +65,23 @@ font-size:15px;
   <widget class="QPushButton" name="pushButtonSave">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>400</y>
+     <x>50</x>
+     <y>440</y>
      <width>121</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #16A34A;
+    color: white;
+    border-radius: 8px;
+    font: bold 10pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #15803D;
+}</string>
    </property>
    <property name="text">
     <string>SAVE</string>
@@ -62,10 +91,22 @@ font-size:15px;
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>400</y>
+     <y>440</y>
      <width>121</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #F59E0B;
+    color: white;
+    border-radius: 8px;
+    font: bold 10pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #D97706;
+}</string>
    </property>
    <property name="text">
     <string>CLEAR</string>
@@ -74,11 +115,23 @@ font-size:15px;
   <widget class="QPushButton" name="pushButtonBack">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>400</y>
+     <x>470</x>
+     <y>440</y>
      <width>121</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #DC2626;
+    color: white;
+    border-radius: 8px;
+    font: bold 10pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #B91C1C;
+}</string>
    </property>
    <property name="text">
     <string>BACK</string>
@@ -87,11 +140,16 @@ font-size:15px;
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>70</y>
+     <x>60</x>
+     <y>110</y>
      <width>121</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #374151;
+font: bold 10pt &quot;Segoe UI&quot;;
+background: transparent;</string>
    </property>
    <property name="text">
     <string>STUDENT ID</string>
@@ -100,11 +158,24 @@ font-size:15px;
   <widget class="QLineEdit" name="lineEditName">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>130</y>
+     <x>220</x>
+     <y>170</y>
      <width>281</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 2px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2563EB;
+}</string>
    </property>
    <property name="text">
     <string/>
@@ -113,11 +184,24 @@ font-size:15px;
   <widget class="QLineEdit" name="lineEditDept">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>190</y>
+     <x>220</x>
+     <y>230</y>
      <width>281</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 2px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2563EB;
+}</string>
    </property>
    <property name="text">
     <string/>
@@ -126,11 +210,24 @@ font-size:15px;
   <widget class="QLineEdit" name="lineEditYear">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>250</y>
+     <x>220</x>
+     <y>290</y>
      <width>281</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 2px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2563EB;
+}</string>
    </property>
    <property name="text">
     <string/>
@@ -139,11 +236,24 @@ font-size:15px;
   <widget class="QLineEdit" name="lineEditPhone">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>300</y>
+     <x>220</x>
+     <y>350</y>
      <width>281</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 2px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2563EB;
+}</string>
    </property>
    <property name="text">
     <string/>
@@ -152,11 +262,16 @@ font-size:15px;
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>130</y>
-     <width>121</width>
+     <x>60</x>
+     <y>170</y>
+     <width>141</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #374151;
+font: bold 10pt &quot;Segoe UI&quot;;
+background: transparent;</string>
    </property>
    <property name="text">
     <string>STUDENT NAME</string>
@@ -165,11 +280,16 @@ font-size:15px;
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>190</y>
+     <x>60</x>
+     <y>230</y>
      <width>121</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #374151;
+font: bold 10pt &quot;Segoe UI&quot;;
+background: transparent;</string>
    </property>
    <property name="text">
     <string>DEPARTMENT</string>
@@ -179,10 +299,15 @@ font-size:15px;
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>250</y>
+     <y>290</y>
      <width>121</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #374151;
+font: bold 10pt &quot;Segoe UI&quot;;
+background: transparent;</string>
    </property>
    <property name="text">
     <string>YEAR</string>
@@ -192,10 +317,15 @@ font-size:15px;
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>300</y>
+     <y>350</y>
      <width>121</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #374151;
+font: bold 10pt &quot;Segoe UI&quot;;
+background: transparent;</string>
    </property>
    <property name="text">
     <string>PHONE</string>
